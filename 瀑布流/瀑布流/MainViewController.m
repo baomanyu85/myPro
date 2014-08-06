@@ -11,16 +11,25 @@
 #import "MGJData.h"
 #import "UIImageView+WebCache.h"
 
-#define kColNumber 4
+#define kColNumber 3
 
 @interface MainViewController ()
 
 // 数据列表
 @property (strong, nonatomic) NSArray *dataList;
+//当前显示列数
+@property(assign,nonatomic)NSInteger dataColumns;
 
 @end
 
 @implementation MainViewController
+//设备旋转方向
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    
+    //如果发生旋转，就重新加载数据
+    [self.waterFlowView reloadData];
+}
 
 #pragma mark - 私有方法
 #pragma mark 加载蘑菇街数据
@@ -60,7 +69,19 @@
 #pragma mark - 列数
 - (NSInteger)numberOfColumnsInWaterFlowView:(WaterFlowView *)waterFlowView
 {
-    return kColNumber;
+    //可以根据设备的当前方向，设置要显示的数据列数
+    // 可以根据设备的当前方向，设定要显示的数据列数
+    if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
+    {
+        self.dataColumns = 3;
+    }
+    else
+    {
+        self.dataColumns = 5;
+    }
+    
+    return self.dataColumns;
+
 }
 
 #pragma mark - 行数

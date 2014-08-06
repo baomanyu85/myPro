@@ -66,6 +66,8 @@
 
 // 2. 指定indexPath单元格的行高
 - (CGFloat)waterFlowView:(WaterFlowView *)waterFlowView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+// 3. 刷新数据
+- (void)waterFlowViewRefreshData:(WaterFlowView *)waterFlowView;
 
 @end
 
@@ -76,5 +78,5 @@
 
 #pragma mark 刷新数据
 - (void)reloadData;
-
-@end
+#pragma mark 查询可重用单元格
+- (id)dequeueReusableCellWithIdentifier:(NSString *)identifier;@end
