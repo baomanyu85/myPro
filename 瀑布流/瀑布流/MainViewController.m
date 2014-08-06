@@ -46,7 +46,7 @@
     self.dataList = arrayM;
     
     // 2. 强烈提醒，需要测试
-  //  NSLog(@"%@", self.dataList);
+    //    NSLog(@"%@", self.dataList);
 }
 
 - (void)viewDidLoad
@@ -66,14 +66,13 @@
 #pragma mark - 行数
 - (NSInteger)waterFlowView:(WaterFlowView *)waterFlowView numberOfRowsInColumns:(NSInteger)columns
 {
-  //  NSLog(@"----%ld",self.dataList.count);
     return self.dataList.count;
 }
 
 - (WaterFlowCellView *)waterFlowView:(WaterFlowView *)waterFlowView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *ID = @"MyCell";
-//    WaterFlowCellView *cell = waterFlowView.deq
+    //    WaterFlowCellView *cell = waterFlowView.deq
     WaterFlowCellView *cell = [[WaterFlowCellView alloc]initWithResueIdentifier:ID];
     
     // 设置cell

@@ -20,17 +20,6 @@
 
 @implementation WaterFlowView
 
--(id)initWithFrame:(CGRect)frame
-{
-    self=[super initWithFrame:frame];
-    if (self)
-    {
-      //  [_delegate waterFlowView:self didSelectRowAtIndexPath:_indexPaths];
-    }
-    return self;
-}
-
-
 #pragma mark - 使用UIView的frame的Setter方法
 // 此方法是在重新调整视图大小时调用的，可以利用此方法在横竖屏切换时刷新数据使用
 - (void)setFrame:(CGRect)frame
@@ -45,9 +34,9 @@
 #pragma mark - 加载数据
 - (void)reloadData
 {
-    NSLog(@"加载数据 %ld", [self.dataSource waterFlowView:self numberOfRowsInColumns:0]);
+    NSLog(@"加载数据 %d", [self.dataSource waterFlowView:self numberOfRowsInColumns:0]);
     NSInteger count = [self.dataSource waterFlowView:self numberOfRowsInColumns:0];
-
+    
     if (count == 0) {
         return;
     }
@@ -63,16 +52,12 @@
     // 1. 首先初始化根据数据行数indexPaths数组
     NSInteger dataCount = [self rowsCount];
     
-    if (self.indexPaths == nil)
-    {
+    if (self.indexPaths == nil) {
         self.indexPaths = [NSMutableArray arrayWithCapacity:dataCount];
-    }
-    else
-    {
+    } else {
         [self.indexPaths removeAllObjects];
     }
-    for (NSInteger i = 0; i < dataCount; i++)
-    {
+    for (NSInteger i = 0; i < dataCount; i++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         
         [self.indexPaths addObject:indexPath];
@@ -84,13 +69,11 @@
     
     // 2) 使用一个数组，记录每列的当前Y值
     CGFloat currentY[_columnNumbers];
-    for (NSInteger i = 0; i < _columnNumbers; i ++)
-    {
+    for (NSInteger i = 0; i < _columnNumbers; i ++) {
         currentY[i] = 0.0;
     }
     
-    for (NSIndexPath *indexPath in self.indexPaths)
-    {
+    for (NSIndexPath *indexPath in self.indexPaths) {
         
         // 从MainViewController的数据源方法，获取单元格
         WaterFlowCellView *cell = [self.dataSource waterFlowView:self cellForRowAtIndexPath:indexPath];

@@ -16,9 +16,6 @@
 		18172540180B8E6700CFE2A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1817253F180B8E6700CFE2A0 /* Default.png */; };
 		18172542180B8E6700CFE2A0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18172541180B8E6700CFE2A0 /* Default@2x.png */; };
 		18172544180B8E6700CFE2A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18172543180B8E6700CFE2A0 /* Default-568h@2x.png */; };
-		1817254D180B8ECE00CFE2A0 /* WaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817254C180B8ECE00CFE2A0 /* WaterFlowView.m */; };
-		18172550180B8EEC00CFE2A0 /* WaterFlowCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817254F180B8EEC00CFE2A0 /* WaterFlowCellView.m */; };
-		18172553180B8F1900CFE2A0 /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18172552180B8F1900CFE2A0 /* WaterFlowViewController.m */; };
 		18172556180B8F6500CFE2A0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18172555180B8F6500CFE2A0 /* MainViewController.m */; };
 		18172590180B9CDF00CFE2A0 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1817258F180B9CDF00CFE2A0 /* 123.jpg */; };
 		1817259C180BC3EA00CFE2A0 /* mogujie.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1817259B180BC3EA00CFE2A0 /* mogujie.plist */; };
@@ -40,6 +37,9 @@
 		181725FD180BDF8400CFE2A0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181725FC180BDF8400CFE2A0 /* ImageIO.framework */; };
 		181725FF180BDF8C00CFE2A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181725FE180BDF8C00CFE2A0 /* MapKit.framework */; };
 		18172601180BEB1A00CFE2A0 /* 123.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18172600180BEB1A00CFE2A0 /* 123.plist */; };
+		83BDE6351991E19600E6A4EC /* WaterFlowCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BDE6301991E19600E6A4EC /* WaterFlowCellView.m */; };
+		83BDE6361991E19600E6A4EC /* WaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BDE6321991E19600E6A4EC /* WaterFlowView.m */; };
+		83BDE6371991E19600E6A4EC /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BDE6341991E19600E6A4EC /* WaterFlowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +66,6 @@
 		1817253F180B8E6700CFE2A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		18172541180B8E6700CFE2A0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		18172543180B8E6700CFE2A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1817254B180B8ECE00CFE2A0 /* WaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowView.h; sourceTree = "<group>"; };
-		1817254C180B8ECE00CFE2A0 /* WaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowView.m; sourceTree = "<group>"; };
-		1817254E180B8EEC00CFE2A0 /* WaterFlowCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCellView.h; sourceTree = "<group>"; };
-		1817254F180B8EEC00CFE2A0 /* WaterFlowCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCellView.m; sourceTree = "<group>"; };
-		18172551180B8F1900CFE2A0 /* WaterFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
-		18172552180B8F1900CFE2A0 /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
 		18172554180B8F6500CFE2A0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		18172555180B8F6500CFE2A0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1817258F180B9CDF00CFE2A0 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
@@ -111,6 +105,12 @@
 		181725FC180BDF8400CFE2A0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		181725FE180BDF8C00CFE2A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		18172600180BEB1A00CFE2A0 /* 123.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 123.plist; sourceTree = "<group>"; };
+		83BDE62F1991E19600E6A4EC /* WaterFlowCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCellView.h; sourceTree = "<group>"; };
+		83BDE6301991E19600E6A4EC /* WaterFlowCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCellView.m; sourceTree = "<group>"; };
+		83BDE6311991E19600E6A4EC /* WaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowView.h; sourceTree = "<group>"; };
+		83BDE6321991E19600E6A4EC /* WaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowView.m; sourceTree = "<group>"; };
+		83BDE6331991E19600E6A4EC /* WaterFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
+		83BDE6341991E19600E6A4EC /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				181725CF180BDEE000CFE2A0 /* lib */,
-				1817254A180B8E8600CFE2A0 /* WaterFlow */,
+				83BDE62E1991E19600E6A4EC /* WaterFlow */,
 				1817253C180B8E6700CFE2A0 /* AppDelegate.h */,
 				1817253D180B8E6700CFE2A0 /* AppDelegate.m */,
 				18172554180B8F6500CFE2A0 /* MainViewController.h */,
@@ -190,19 +190,6 @@
 				18172543180B8E6700CFE2A0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1817254A180B8E8600CFE2A0 /* WaterFlow */ = {
-			isa = PBXGroup;
-			children = (
-				18172551180B8F1900CFE2A0 /* WaterFlowViewController.h */,
-				18172552180B8F1900CFE2A0 /* WaterFlowViewController.m */,
-				1817254B180B8ECE00CFE2A0 /* WaterFlowView.h */,
-				1817254C180B8ECE00CFE2A0 /* WaterFlowView.m */,
-				1817254E180B8EEC00CFE2A0 /* WaterFlowCellView.h */,
-				1817254F180B8EEC00CFE2A0 /* WaterFlowCellView.m */,
-			);
-			path = WaterFlow;
 			sourceTree = "<group>";
 		};
 		181725CA180BD0B800CFE2A0 /* Products */ = {
@@ -255,6 +242,20 @@
 				181725ED180BDEF800CFE2A0 /* UIImageView+WebCache.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		83BDE62E1991E19600E6A4EC /* WaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				83BDE62F1991E19600E6A4EC /* WaterFlowCellView.h */,
+				83BDE6301991E19600E6A4EC /* WaterFlowCellView.m */,
+				83BDE6311991E19600E6A4EC /* WaterFlowView.h */,
+				83BDE6321991E19600E6A4EC /* WaterFlowView.m */,
+				83BDE6331991E19600E6A4EC /* WaterFlowViewController.h */,
+				83BDE6341991E19600E6A4EC /* WaterFlowViewController.m */,
+			);
+			name = WaterFlow;
+			path = ../WaterFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +344,8 @@
 			files = (
 				1817253A180B8E6700CFE2A0 /* main.m in Sources */,
 				1817253E180B8E6700CFE2A0 /* AppDelegate.m in Sources */,
-				1817254D180B8ECE00CFE2A0 /* WaterFlowView.m in Sources */,
-				18172550180B8EEC00CFE2A0 /* WaterFlowCellView.m in Sources */,
-				18172553180B8F1900CFE2A0 /* WaterFlowViewController.m in Sources */,
 				18172556180B8F6500CFE2A0 /* MainViewController.m in Sources */,
+				83BDE6371991E19600E6A4EC /* WaterFlowViewController.m in Sources */,
 				1817259F180BC4FE00CFE2A0 /* MGJData.m in Sources */,
 				181725EE180BDEF800CFE2A0 /* MKAnnotationView+WebCache.m in Sources */,
 				181725EF180BDEF800CFE2A0 /* NSData+GIF.m in Sources */,
@@ -356,8 +355,10 @@
 				181725F3180BDEF800CFE2A0 /* SDWebImageDownloader.m in Sources */,
 				181725F4180BDEF800CFE2A0 /* SDWebImageDownloaderOperation.m in Sources */,
 				181725F5180BDEF800CFE2A0 /* SDWebImageManager.m in Sources */,
+				83BDE6361991E19600E6A4EC /* WaterFlowView.m in Sources */,
 				181725F6180BDEF800CFE2A0 /* SDWebImagePrefetcher.m in Sources */,
 				181725F7180BDEF800CFE2A0 /* UIButton+WebCache.m in Sources */,
+				83BDE6351991E19600E6A4EC /* WaterFlowCellView.m in Sources */,
 				181725F8180BDEF800CFE2A0 /* UIImage+GIF.m in Sources */,
 				181725F9180BDEF800CFE2A0 /* UIImage+MultiFormat.m in Sources */,
 				181725FA180BDEF800CFE2A0 /* UIImage+WebP.m in Sources */,
